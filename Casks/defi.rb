@@ -1,6 +1,6 @@
 cask "defi" do
-  version "0.2.0-alpha"
-  sha256 "68fa7de3b2d2f7d96bcc5ca15617b28fba853cd5d234afd98110828f8e42990f"
+  version "0.2.1"
+  sha256 "97b6dde8285a8c72e6446548d029accea3c9e17290165b0e1de847fdfc3c2898"
 
   url "https://github.com/qeude/Defi/releases/download/v#{version}/Defi-v#{version}.zip"
   name "Defi"
@@ -43,7 +43,8 @@ cask "defi" do
     It is signed with a self-signed certificate and is not notarized.
     This Cask removes quarantine from Defi.app to allow it to open.
 
-    Open Defi, grant Accessibility access in System Settings, then reopen it.
+    Open Defi and grant Accessibility access in System Settings.
+    Defi starts managing windows automatically, without a restart.
     Configuration is optional at ~/.config/defi/config.toml.
     Enable Launch at Login from Defi's menu bar if desired.
   EOS
