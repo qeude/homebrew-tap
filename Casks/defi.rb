@@ -1,7 +1,6 @@
 cask "defi" do
   version "0.2.0-alpha"
-  # Local candidate only. Replace with the published release archive's checksum before merging.
-  sha256 "d968242ecc3fe07ca1b5d64bd48ed9a11db481e843b08a0f0a843578a8fe57a0"
+  sha256 "68fa7de3b2d2f7d96bcc5ca15617b28fba853cd5d234afd98110828f8e42990f"
 
   url "https://github.com/qeude/Defi/releases/download/v#{version}/Defi-v#{version}.zip"
   name "Defi"

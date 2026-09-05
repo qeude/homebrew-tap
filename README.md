@@ -4,8 +4,7 @@ Homebrew packages maintained by [qeude](https://github.com/qeude).
 
 ## Defi
 
-The Cask is being prepared. These commands will work after the release archive
-is published and the Cask is merged:
+Install the public alpha:
 
 ```sh
 brew install --cask qeude/tap/defi
