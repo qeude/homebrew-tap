@@ -13,16 +13,16 @@ cask "defi" do
   app "Defi.app"
   binary "#{appdir}/Defi.app/Contents/MacOS/defi"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Defi.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Defi.app"]
   end
 
-  uninstall_preflight do
-    system_command "#{appdir}/Defi.app/Contents/MacOS/defi",
-                   args: ["service", "disable"]
-    system_command "#{appdir}/Defi.app/Contents/MacOS/defi",
-                   args: ["service", "stop"]
+  uninstall_preflight_steps do
+    run "Defi.app/Contents/MacOS/defi",
+        args: ["service", "disable"], base: :appdir, must_succeed: false
+    run "Defi.app/Contents/MacOS/defi",
+        args: ["service", "stop"], base: :appdir, must_succeed: false
   end
 
   uninstall quit: "com.quentin.defi"
