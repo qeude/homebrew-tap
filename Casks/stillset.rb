@@ -1,6 +1,6 @@
 cask "stillset" do
-  version "0.1.0"
-  sha256 "1d786156d39a8d02279ce49b8d48add48be1eaf7377a895fc29d5df111d228b7"
+  version "0.2.0"
+  sha256 "1d72878cba5faae1c71805482fec5879cd09cb3b098a718d16daf4d06ca042cf"
 
   url "https://github.com/qeude/Stillset/releases/download/v#{version}/Stillset-v#{version}.zip"
   name "Stillset"
