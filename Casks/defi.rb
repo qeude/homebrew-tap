@@ -25,17 +25,24 @@ cask "defi" do
         args: ["service", "stop"], base: :appdir, must_succeed: false
   end
 
-  uninstall quit: "com.quentin.defi"
+  uninstall quit: [
+    "com.quentin.defi",
+    "com.qeude.defi",
+  ]
 
   zap trash: [
     "~/.config/defi",
     "~/Library/Application Support/Defi",
     "~/Library/Caches/com.quentin.defi",
+    "~/Library/Caches/com.qeude.defi",
     "~/Library/LaunchAgents/com.quentin.defi.plist",
+    "~/Library/LaunchAgents/com.qeude.defi.plist",
     "~/Library/Logs/Defi",
     "~/Library/Logs/Defi.log",
     "~/Library/Preferences/com.quentin.defi.plist",
+    "~/Library/Preferences/com.qeude.defi.plist",
     "~/Library/Saved Application State/com.quentin.defi.savedState",
+    "~/Library/Saved Application State/com.qeude.defi.savedState",
   ]
 
   caveats <<~EOS
