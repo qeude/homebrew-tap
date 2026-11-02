@@ -1,6 +1,6 @@
 cask "defi" do
-  version "0.6.0"
-  sha256 "be1dc196a6c40bcd2ebd26ea3e1eeef69ea2200e1856865500adff5070e241f3"
+  version "0.7.0"
+  sha256 "ea62e06b5d4776224f7ddf75f8e2b5d097c28c855233ad03ca0778f35c4fe0ba"
 
   url "https://github.com/qeude/Defi/releases/download/v#{version}/Defi-v#{version}.zip"
   name "Defi"
