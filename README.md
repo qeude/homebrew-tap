@@ -10,7 +10,7 @@ Install the public alpha:
 brew install --cask qeude/tap/defi
 ```
 
-Requires Apple Silicon and macOS 26 or newer. Defi is an experimental alpha,
+Requires Apple Silicon and macOS 15.4 or newer. Defi is an experimental alpha,
 signed with a self-signed certificate and not notarized. The Cask removes
 quarantine from the installed app. Only install if you trust this source.
 
