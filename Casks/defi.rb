@@ -8,7 +8,7 @@ cask "defi" do
   homepage "https://github.com/qeude/Defi"
 
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  depends_on macos: :sequoia
 
   app "Defi.app"
   binary "#{appdir}/Defi.app/Contents/MacOS/defi"
@@ -46,7 +46,7 @@ cask "defi" do
   ]
 
   caveats <<~EOS
-    Defi is an experimental alpha for macOS 26 and Apple Silicon.
+    Defi is an experimental alpha for macOS 15.4 or newer and Apple Silicon.
     It is signed with a self-signed certificate and is not notarized.
     This Cask removes quarantine from Defi.app to allow it to open.
 
